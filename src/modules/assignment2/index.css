@@ -1,0 +1,109 @@
+body{
+    font-family: sans-serif;
+}
+.mainContainer{
+    height:1400px;
+    width:800px;
+    margin-left: 500px;
+    margin-top: 100px;
+    background-color:white;
+}
+.headerContainer{
+    background-image: url("header.jpeg");
+    height:400px;
+    background-repeat: no-repeat;
+    background-size: 800px;
+    border-radius: 30px 30px 0px 0px ;
+    overflow:auto;
+}
+.header-9tools{
+    color:rgb(125, 194, 211);
+    font-size: 47px;
+    width:380px;
+    font-weight: bolder;
+     margin-left: 80px;
+     margin-top: 60px;
+     overflow:auto;
+}
+.header-toCreate{
+    font-size: 42px;
+    width:350px;
+    color:white;
+    margin-left: 80px;
+    font-weight: 100;
+    margin-top: -45px;
+}
+.oddContent{
+    height:220px;
+    background-color:rgb(125, 194, 211) ;
+    margin-top: -37px;
+}
+.oddContent img{
+    margin-left: 60px;
+    margin-top: 40px;
+    overflow:auto;
+    height:150px;
+}
+.oddContent h1{
+    color:rgb(0, 119, 255);
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 300px;
+    margin-top:-130px;
+    overflow: auto;
+}
+.oddContent p{
+    font-size: 20px;
+    margin-left: 300px;
+    margin-top: -15px;
+    overflow: auto;
+}
+.evenContent{
+    height:220px;
+    background-color:rgb(187, 231, 245) ;
+    margin-top: 0px;
+    overflow:auto;  
+    margin-bottom: 37px;
+}
+.evenContent img{
+    margin-left: 590px;
+    overflow:auto;
+    height:140px;
+    margin-top:-110px;
+}
+.evenContent h1{
+    color:rgb(0, 119, 255);
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 60px;
+    margin-top:60px;
+    overflow:auto;
+}
+.evenContent p{
+    font-size: 20px;
+    margin-left:60px;
+    margin-top: -10px;
+    width: 520px;
+}
+
+.footContainer {
+  height: 40px;
+  width: 100%;
+  border-bottom: 35px;
+  background-color: darkblue;
+  margin-top:-37px;
+}
+.footContent {
+  display: flex;
+  flex-direction: row;
+  margin-left: 125px;
+}
+.footContent i{
+    font-size: 22px;
+    color: white;
+    margin: 7px;
+}
+.footContent p{
+    color: white;
+    margin: 10px;
+}

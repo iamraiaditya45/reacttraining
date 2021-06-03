@@ -118,9 +118,6 @@ body{
     text-align: center;
 }
 
-
-/*kar*/
-
   .childcontainer2 {
     width: 300px;
     height: 520px;
@@ -169,16 +166,14 @@ body{
     flex-direction: row;
     margin: 30px 0px 10px 0px;
   }
-  .longpoints {
+  .containerPlan-content-1 {
     margin-top: -0px;
     opacity: 0.9;
   }
-  .pointsblock {
+  .containerPlan {
     margin: 10px 0px 10px 0px;
   }
-  .points {
-    opacity: 0.9;
-  }
+  
   .viewallFeature1{
     margin-top: 50px;
   }
@@ -195,31 +190,32 @@ body{
     background-color: #5b06f8;
     font-size: 15px;
     font-weight: bold;
-    width: 280px;
+    width: 285px;
     margin: 20px 0px 10px 20px;
-    height: 50px;
+    height: 55px;
     padding: 10px 10px 10px 10px;
     border: none;
   }
   
 
-  .itemcont3Head{
+  .areYoucorporate-top{
       margin-left: 700px;
   }
-  .container3Head{
+  .Corporate-contact{
       text-align: right;
       margin-right:200px;
       margin-top: -690px;
   }
-  .contactus{
+  .contact-us{
       text-decoration: none;
+      font-size:14px;
   }
   .container3Head a{
     text-decoration: none;
     color: #5b06f8;
     font-weight: bold;
 }
-.content3 {
+.childContainer-3 {
   width: 290px;
   height: 522px;
   border-radius: 20px;
@@ -228,19 +224,19 @@ body{
   margin-top: 50px;
   margin-left: 1060px;
 }
-.content3Head1 {
+.containerpro {
   font-size: 32px;
   font-weight: bold;
   color: white;
 }
-.content3Head2 {
+.containerMonthly {
   font-size: 26px;
   font-weight: 400;
   margin-left: 220px;
   margin-top: -65px;
   color: white;
 }
-.horizontal2 {
+.monthly {
   width: 17px;
   height: 3px;
   background-color: white;
@@ -260,40 +256,50 @@ body{
     color: white;
     margin-top: 35px;
 }
-.tick2 {
+.sign-2 {
   font-size: 20px;
   font-weight: 500;
   color: white;
   padding-right: 20px;
+  margin-bottom: 10px;
 }
 .points3{
     color: white;
 }
-.longpoints3{
-    margin-top: -0px;
+.facebook{
+    margin-top: -28px;
     color: white;
+    margin-left:35px;
 }
-.pointsblock3 {
-  margin: 10px 0px -10px 0px;
+.pointunlimited {
+  margin-top: 10px;
+  margin-bottom: -10px;
 }
-.viewFeature3 a {
+.viewallFeaturelastblock p {
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
   color: white;
-  margin-left: 80px;
-  margin-top: 20px;
+  margin-left: 70px;
+  margin-top: 70px;
 }
-.button3 {
+.button-2 {
   border-radius: 10px;
   color: #5b06f8;
   background-color: white;
   font-size: 15px;
   font-weight: bold;
-  width: 280px;
-  margin: 20px 0px 10px 20px;
-  height: 50px;
-  padding: 10px 10px 10px 10px;
+  width: 285px;
+  margin: 10px 0px 10px 5px;
+  height: 52px;
+  padding: 8px 10px 10px 8px;
   border: none;
+}
+.containerAllof-content-1 {
+  margin-top: -0px;
+  opacity: 0.9;
+}
+.containerAllof {
+  margin: 10px 0px 10px 0px;
 }
   
