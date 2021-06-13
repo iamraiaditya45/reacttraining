@@ -7,8 +7,8 @@ function MoviePage() {
   const [rating, setRating] = useState(1);
   useEffect(() => {
     setInterval(() => {
-      setRating(rating + Math.floor(Math.random() * 4));
-    }, 3000);
+      setRating(rating + Math.floor(Math.random() * 3));
+    }, 2000);
   }, [rating]);
   console.log(rating)
     return (
