@@ -1,6 +1,6 @@
 
 
-import React, { Component, useState } from "react";
+import React, {  useState } from "react";
 import "./index.css";
 import Login from "./login";
 import Signup from "./signup";
@@ -9,26 +9,26 @@ function Assignment6() {
   const [loginOpen, setLoginOpen] = useState(false);
   const [signupOpen, setSignupOpen] = useState(false);
 
-  const handleLoginChange = () => {
+  const checkLogin = () => {
     setLoginOpen(true);
   };
-  const handleSignupChange = () => {
+  const checkSignup = () => {
     setSignupOpen(true);
   };
   return (
     <div>
-      {!signupOpen && !loginOpen && (
+      {signupOpen && <Login/>}
+      {loginOpen && <Signup/>}
         <div className={"mainContainer"}>
-          <button type={"button"} className={"loginBtn"}  onClick={handleLoginChange}>
+          <button type={"button"} className={"button"}  onClick={checkLogin}>
             LOGIN
           </button>
-          <button type={"button"} className={"signupBtn"} onClick={handleSignupChange}>
-            SIGN UP
+          <button type={"button"} className={"button"} onClick={checkSignup}>
+            SIGNUP
           </button>
         </div>
-      )}
-      {loginOpen && <Login />}
-        {signupOpen && <Signup />}
+      {loginOpen && <login />}
+        {signupOpen && <signup />}
     </div>
   );
 }

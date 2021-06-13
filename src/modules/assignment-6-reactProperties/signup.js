@@ -23,7 +23,7 @@ function Signup(){
     <input type="password" placeholder="Enter Password" name="psw" />
 
 
-<button onClick={"#"} className={"submit"} type={"button"}>
+<button onClick={"moviesPage.js"} className={"submit"} type={"button"}>
               {"Sign Up"}
             </button>
           </form>

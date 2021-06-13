@@ -20,11 +20,7 @@ function Login() {
      <input type="password" placeholder="Enter Password" name="psw" />
 
           <button
-            type="submit"
-            value={"SUBMIT"}
-            className={"submitBtn"}
-            onClick={"#"}
-          ></button>
+            type="submit" value={"SUBMIT"}className={"submitBtn"}onClick={"moviesPage.js"}></button>
         </div>
       ) : (
         <moviesPage />
