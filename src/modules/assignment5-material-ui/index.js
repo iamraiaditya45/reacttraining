@@ -166,7 +166,7 @@ tablecontainer:{
     margin:"670px 178px",
     width:"1350px",
     height:"550px",
-    boxShadow:"0 0 2px grey"
+    boxShadow:"0 0 2px grey",
 },
 tablehead:{
 
@@ -212,61 +212,10 @@ showbutton:{
     fontSize:"20px",
     marginLeft:"-150px"
 },
-tableheading: {
-  position: "absolute",
-  width: "700px",
-  margin: "490px -20px",
-  color: "grey",
-},
-tablecontainer: {
-  position: "absolute",
-  margin: "570px 110px",
-  width: "1260px",
-  height: "550px",
-  boxShadow: "0 0 2px grey",
-},
-tablehead: {
-  fontSize: "22px",
-  fontWeight: "bold",
-  width: "250px",
-},
-tablehead2: {
-  fontSize: "20px",
-  fontWeight: "bold",
-  width: "350px",
-},
-sellercol: {
-  fontSize: "17px",
-  color: "blue",
-},
-paymentcol: {
-  fontSize: "20px",
-},
-pricecol: {
-  fontSize: "22px",
-  color: "green",
-  fontWeight: "bold",
-},
-limitcol: {
-  fontSize: "20px",
-},
-buybutton: {
-  backgroundColor: "orange",
-  color:"white",
-  padding: "7px 25px",
-  marginLeft: "-60px",
-  fontSize: "15px",
-  fontWeight: "bold",
-},
-showbutton: {
-  width: "200px",
-  fontWeight: "bold",
-  fontSize: "20px",
-  marginLeft: "-150px",
-},
+
 tablebottom: {
   position: "absolute",
-  margin: "2340px 110px",
+  margin: "2340px 200px",
 },
 youcanbe: {
   fontSize: "25px",

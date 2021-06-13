@@ -289,4 +289,4 @@ render(){
         );
     }
 }
-export default Home;
+ 
