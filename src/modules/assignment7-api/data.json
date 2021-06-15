@@ -1,0 +1,29 @@
+{
+ "posts":[ 
+    {
+      "userID":1,
+      "name":"anil sidhu",
+      "email":"anil@test.com",
+      "mobile":9999
+    },
+    {
+      "userID":2,
+      "name":"peter",
+      "email":"peter@test.com",
+      "mobile":9999
+    },
+    {
+      "userID":3,
+      "name":"bruce",
+      "email":"tony@test.com",
+      "mobile":9999
+    },
+    {
+      "userID":4,
+      "name":"sam",
+      "email":"sam@test.com",
+      "mobile":9999
+    }
+    
+    ]
+}
