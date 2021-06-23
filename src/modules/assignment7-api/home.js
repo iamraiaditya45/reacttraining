@@ -28,14 +28,14 @@ getCovidData();
                     <th>LAST UPDATE</th>
                     <th>MIGRATE</th>
                 </tr>
-                <tr>
+                {/* <tr>
                     <td>{data.active}</td>
               <td>{data.confirmed}</td>
              <td> {data.deaths}</td>
              <td> {data.recovered}</td>
              <td> {data.lastupdatedtime}</td>
              <td> {data.migratedother}</td>
-                </tr>
+                </tr> */}
             </table>
 
             <form>
