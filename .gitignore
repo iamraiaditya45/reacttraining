@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/src/modules/assignment-11/node_modules
+/src/modules/assignment-11/reactredux/reduxapp/node_modules
 /.pnp
 .pnp.js
 

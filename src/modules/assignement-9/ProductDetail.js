@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import { Link, useHistory ,useParams} from "react-router-dom";
 import { useState, useEffect } from "react";
 
-const Carddetail=()=> {
+function ProductDetail() {
   const [logged, setLogged] = useState(
     JSON.parse(window.localStorage.getItem("token"))
   );
@@ -20,13 +20,17 @@ const Carddetail=()=> {
     window.localStorage.setItem("token", false);
     setLogged(JSON.parse(window.localStorage.getItem("token")));
   };
-
-const Carddetail=()=>{
-    return(
+  return (
     <div>
-    <h1>card detail</h1>
+      <button className={"logoutButton"} onClick={() => handleLogOut()}>
+        {"LOGOUT"}
+      </button>
+      <div className={"productDescription"}>
+      <p>Product ID:{ProductID}</p>
+      <button className={"buyButton"}>BUY NOW</button>
+      </div>
     </div>
-    );
-};
+  );
 }
-export default Carddetail;
+
+export default ProductDetail;

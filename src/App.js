@@ -1,9 +1,8 @@
 import React from 'react'
-import Assignment9 from './modules/assignement-9'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Card from './modules/assignement-9/card';
 import Login from './modules/assignement-9/login';
-import Carddetail from './modules/assignement-9/carddetail.js';
+import ProductDetail from './modules/assignement-9/ProductDetail';
 
 class App extends React.Component{
   render(){
@@ -18,8 +17,8 @@ class App extends React.Component{
             <Route path={"/Card"}>
               <Card />
             </Route>
-            <Route path={"/carddetail/:ProductID"}>
-              <Carddetail />
+            <Route path={"/ProductDetail"}>
+              <ProductDetail/>
             </Route>
           </Switch>
         </Router>

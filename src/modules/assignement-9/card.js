@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {useHistory,Link} from 'react-router-dom';
-import Carddetail from "./carddetail";
+import Carddetail from "./ProductDetail.js";
 import { useState , useEffect } from 'react';
 
 function Product(){
