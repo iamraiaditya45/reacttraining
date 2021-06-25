@@ -1,9 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules/
-/src/modules/assignment-11/node_modules/
-/src/modules/assignment-11/reactredux/reduxapp/node_modules/
+/node_modules
+/src/modules/assignment-11/node_modules
+/src/modules/assignment-11/reactredux/reduxapp/node_modules
 /.pnp
 .pnp.js
 
