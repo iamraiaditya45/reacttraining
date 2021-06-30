@@ -10,13 +10,32 @@ import {
   Switch,
   FormControlLabel,
 } from "@material-ui/core";
-
+import { yellow } from "@material-ui/core/colors";
+const Styles = makeStyles({
+  Button:{
+    backgroundColor:yellow,
+  }
+})
 
 function ColorsDetails() {
+  const classes = Styles();
   const { appState, dispatch } = useContext(AppContext);
   const { colorState, themeState } = appState;
   return (
     <Box style={themeState.Theme} className={classes.MainContainer}>
+        <Box className={classes.ChangeBtnBox} pb={3}>
+        <FormControlLabel
+          value="button"
+          control={
+            <Button
+            className={classes.Button}
+              color="inherit"
+              onClick={() => dispatch.themeDispatch({ type: "SWITCH" })}
+            >SWITCH</Button>
+          }
+          label={themeState.CurrentTheme}
+        />
+      </Box>
       <Typography
         className={classes.MainHeading}
         align={"center"}
@@ -24,27 +43,16 @@ function ColorsDetails() {
       </Typography>
       <Grid className={classes.CardsContainer} container spacing={6}>
         {colorState.colorsData?.map((current, index) => (
-          <Grid key={ind} item lg={4}>
+          <Grid key={index} item lg={4}>
             <Card className={classes.Cards}>
-              <Box
-                className={classes.CardBoxColor}
-                style={{ backgroundColor:white }}
-              ></Box>
-              <Box className={classes.CardDetail}>
+                          <Box className={classes.CardDetail}>
                 <Typography className={classes.CardDetailHead} align={"center"}>
-                  {"CARD DETAILS"}
+                  {"CARD CONTENT"}
                 </Typography>
                 <Box className={classes.DetailBox}>
                   <Typography variant={"h5"}>{"color name:"}</Typography>
                   <Typography className={classes.DetailLabel} variant={"h6"}>
                     {current.name}
-                  </Typography>
-                </Box>
-
-                <Box className={classes.DetailBox}>
-                  <Typography variant={"h5"}>{"color code:"}</Typography>
-                  <Typography className={classes.DetailLabel} variant={"h6"}>
-                    {current.color}
                   </Typography>
                 </Box>
                 <Box className={classes.DetailBox}>
@@ -58,19 +66,7 @@ function ColorsDetails() {
           </Grid>
         ))}
       </Grid>
-      <Box className={classes.ChangeBtnBox} pb={3}>
-        <FormControlLabel
-          value="bottom"
-          control={
-            <Button
-            className={classes.ThemeButton}
-              color="inherit"
-              onClick={() => dispatch.themeDispatch({ type: "ChangeTheme" })}
-            >CHANGE THEME</Button>
-          }
-          label={themeState.CurrentTheme}
-        />
-      </Box>
+    
     </Box>
   );
 }

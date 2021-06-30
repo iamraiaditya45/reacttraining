@@ -1,16 +1,16 @@
 import React, {useReducer} from "react";
 
 
-import ColorsDetails from "./ColorDetails";
+import ColorsDetails from "./colors";
 import {
   initialColorState,
   initialThemeState,
   colorReducer,
   themeReducer,
-} from "./reducer";
+} from "./reducers";
 import { AppContext } from "./context";
 
-function Assignment13() {
+function Assignment12() {
   const [colorState, colorDispatch] = useReducer(
     colorReducer,
     initialColorState
@@ -31,4 +31,4 @@ function Assignment13() {
   );
 }
 
-export default Assignment13;
+export default Assignment12;

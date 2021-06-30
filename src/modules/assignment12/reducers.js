@@ -1,4 +1,4 @@
-import Data from "./data";
+import Data from "./Data";
 
 export const initialColorState = {
   colorsData: Data,
@@ -17,7 +17,7 @@ export const colorReducer = (state, action) => {
 
 export const themeReducer = (state, action) => {
   switch (action.type) {
-    case "ChangeTheme":
+    case "SWITCH":
       return {
         ...state,
         Theme:
