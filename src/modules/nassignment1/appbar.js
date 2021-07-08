@@ -13,22 +13,18 @@ const drawerWidth = 70;
 
 const styles=makeStyles((theme)=>({
   
-    appBar: {
-    //   [theme.breakpoints.up('sm')]: {
-    //      width: `calc(100% - ${drawerWidth}px)`,
-        height:75,
-    //   },
-    },
-  mainContainer: {
-    backgroundColor:"red",
-  },
-  
-  appBar: {
-    zIndex: theme.zIndex.drawer +1,
-    backgroundColor:"#00688B",
-    boxShadow:"0px"
+  //   appBar: {
+  //   //   [theme.breakpoints.up('sm')]: {
+  //   //      width: `calc(100% - ${drawerWidth}px)`,
+  //       height:75,
+  //   //   },
+  //   },  
+  // appBar: {
+  //   zIndex: theme.zIndex.drawer +1,
+  //   backgroundColor:"#00688B",
+  //   boxShadow:"0px"
     
-  },
+  // },
    expand:{
        color:"white",
        marginRight:"20px",
@@ -68,6 +64,14 @@ const styles=makeStyles((theme)=>({
      marginLeft:"1432px",
     },
 
+    appBar: {
+          height:75,
+      },
+      appBar: {
+        zIndex: theme.zIndex.drawer +1,
+        backgroundColor:"#00688B",
+        boxShadow:"0px"
+      },
 }));
     export default function material() {
   

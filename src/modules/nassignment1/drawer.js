@@ -1,5 +1,4 @@
 import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
 import HomeIcon from '@material-ui/icons/Home';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -8,18 +7,14 @@ import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import MenuIcon from '@material-ui/icons/Menu';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SearchIcon from '@material-ui/icons/Search';
-import CreateIcon from '@material-ui/icons/Create';
-import AddIcon from '@material-ui/icons/Add';
-import TuneRoundedIcon from '@material-ui/icons/TuneRounded';
+import { makeStyles, useTheme, withTheme } from '@material-ui/core/styles';
+import Toolbar from '@material-ui/core/Toolbar';
 const drawerWidth = 70;
 
 const styles=makeStyles((theme)=>({
   
     appBar: {
-    //   [theme.breakpoints.up('sm')]: {
-    //      width: `calc(100% - ${drawerWidth}px)`,
         height:75,
-    //   },
     },
   mainContainer: {
     backgroundColor:"red",
