@@ -1,75 +1,126 @@
 import React from 'react';
-import { makeStyles, useTheme, withTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import CreateIcon from '@material-ui/icons/Create';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { useTheme } from '@material-ui/core/styles';
 
 const drawerWidth = 70;
 
 const styles=makeStyles((theme)=>({
-
-   maincard:{
-    display:"flex",
-    flexDirection:"row",
-    justifyContent:"spaceBetween",
-},
 card2:{
-    height:820,
-    width:530,
-    backgroundColor:"white",
-    margin:5,
-    boxShadow:"0 0 4px grey",
-    marginLeft:drawerWidth+9,
-    padding:10
-},
+     height:820,
+     width:530,
+     backgroundColor:"white",
+     margin:5,
+     boxShadow:"0 0 4px grey",
+     marginLeft:drawerWidth+9,
+     padding:10,
+     [theme.breakpoints.down('sm')]:{         
+      height:820,
+      width:292,
+      backgroundColor:"white",
+      margin:5,
+      boxShadow:"0 0 4px grey",
+      marginLeft:drawerWidth-13,
+      padding:10
+    },
+ },
 
 editbutton:{
-  color:"#007bb8",
-  margin:15,
-  marginLeft:5,
-  borderColor:"#007bb8",
-  height:"40px",
-},
+   color:"#007bb8",
+   margin:15,
+   marginLeft:5,
+   borderColor:"#007bb8",
+   height:"40px",
+   [theme.breakpoints.down('sm')]:{         
+    color:"#007bb8",
+    margin:15,
+    marginLeft:5,
+    borderColor:"#007bb8",
+    height:"40px",
+    },
+ },
 
-hr:{
-  marginLeft:"10px",
-  width:"98%",
-  marginTop:10
-},
+ hr:{
+   marginLeft:"10px",
+   width:"98%",
+   marginTop:10,
+   [theme.breakpoints.down('sm')]:{         
+    marginLeft:"10px",
+    width:"98%",
+    marginTop:10
+    },
+    
+ },
 
-light:{
-  color:"grey"
-  
-},
+ light:{
+  color:"grey",
+  [theme.breakpoints.down('sm')]:{         
+    color:"grey",
+    fontSize:"12px",
+    },  
+ },
 bold:{
-  color:"black",
-  fontWeight:"bold",
-  marginTop:"-15px",
-  overflow:"auto"
-},
-cardbtngreen:{
-  backgroundColor:"#138808",
-  marginLeft:"150px",
-  borderRadius:"20px",
-  color:"white",
-  fontWeight:"bold",
-  width:180,
-  padding:"10px",
-},
-xlight:{
-  color:"grey",
-  fontSize:"15px",
-  marginTop:"-19px"
-},
+   color:"black",
+   fontWeight:"bold",
+   marginTop:"-15px",
+   overflow:"auto",
+   [theme.breakpoints.down('sm')]:{         
+    color:"black",
+    fontWeight:"bold",
+    marginTop:"-15px",
+    overflow:"auto",
+    fontSize:"11px"
+    },
+ },
+ cardbtngreen:{
+   backgroundColor:"#138808",
+   marginLeft:"150px",
+   borderRadius:"20px",
+   color:"white",
+   fontWeight:"bold",
+   width:180,
+   padding:"10px",
+   [theme.breakpoints.down('sm')]:{         
+    backgroundColor:"#138808",
+    marginLeft:"40px",
+    borderRadius:"20px",
+    color:"white",
+    fontWeight:"bold",
+    width:100,
+    padding:"10px",
+    },
+ },
+ xlight:{
+   color:"grey",
+   fontSize:"15px",
+   marginTop:"-19px",
+   [theme.breakpoints.down('sm')]:{         
+    color:"grey",
+    fontSize:"10px",
+    marginTop:"-19px"
+    },
+ },
 selected:{
-  color:"grey",
-  marginLeft:15,
-},
-delete:{
-  display:"flex"
-}
+   color:"grey",
+   marginLeft:15,
+   [theme.breakpoints.down('sm')]:{         
+    color:"grey",
+    marginLeft:15,
+    },
+ },
+ delete:{
+   display:"flex",
+   [theme.breakpoints.down('sm')]:{         
+      display:"flex"
+      }
+ }
+
+
 
 }));
 

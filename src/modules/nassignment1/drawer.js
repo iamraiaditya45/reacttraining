@@ -1,3 +1,4 @@
+import React from 'react';
 import Drawer from '@material-ui/core/Drawer';
 import HomeIcon from '@material-ui/icons/Home';
 import List from '@material-ui/core/List';
@@ -7,36 +8,39 @@ import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import MenuIcon from '@material-ui/icons/Menu';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SearchIcon from '@material-ui/icons/Search';
-import { makeStyles, useTheme, withTheme } from '@material-ui/core/styles';
+import { makeStyles} from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { useTheme } from '@material-ui/core/styles';
+
 const drawerWidth = 70;
 
 const styles=makeStyles((theme)=>({
   
-    appBar: {
-        height:75,
-    },
-  mainContainer: {
-    backgroundColor:"red",
-  },
 
- right:{
-     marginLeft:"1432px",
-    },
     drawer: {
         width: drawerWidth,
         flexShrink: 0,
+        [theme.breakpoints.down('sm')]:{         
+        width:drawerWidth-20,
+        }
       },
       drawerPaper: {
         width: drawerWidth,
-        backgroundColor:"#00416a"
+        backgroundColor:"#00416a",
+        [theme.breakpoints.down('sm')]:{         
+          width:drawerWidth-20,
+        }
       },
       drawerContainer: {
         overflow: 'auto',
       },
       icon:{
           color:"white",
-          fontSize:"37px"
+          fontSize:"37px",
+          [theme.breakpoints.down('sm')]:{         
+          fontSize:"25px",
+          }
       },
       menuItems:{
         backgroundColor:'#545aa7',
